@@ -17,7 +17,7 @@ app.listen(process.env.PORT || 3001, () =>
 app.post("/rooms", (req, res) => {
   const schema = joi.object({
     name: joi.string().required(),
-    amenities: joi.array(),
+    amenities: joi.array(),                                                                                                                                                                                                                         
     location: joi.string().required(),
     oneHourPrice: joi.number().required(),
   });
